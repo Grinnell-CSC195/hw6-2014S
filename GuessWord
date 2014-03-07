@@ -1,0 +1,61 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+<title>GuessWord</title>
+<link rel="stylesheet" type="text/css" href="stylesheet.css"/>
+
+</head>
+<body>
+<p>Guess my 6-letter word. Enter a single lower-case letter into the box below</p>
+
+<Script>
+<!--//
+function showAndClearField(frm){
+  if (frm.guessChar.value == "")
+      alert("Please enter a character");
+  else if (frm.guessChar.value == 'r')
+  {
+  	document.getElementById("char1").innerHTML = 'r';
+  }
+    else if (frm.guessChar.value == 'h')
+  {
+  	document.getElementById("char2").innerHTML = 'h';
+  }
+  else if (frm.guessChar.value == 'y')
+  {
+  	document.getElementById("char3").innerHTML = 'y';
+  }
+  else if (frm.guessChar.value == 'm')
+  {
+  	document.getElementById("char4").innerHTML = 'm';
+  }
+  else if (frm.guessChar.value == 't')
+  {
+  	document.getElementById("char5").innerHTML = 't';
+  }
+  else if (frm.guessChar.value == 'h')
+  {
+  	document.getElementById("char6").innerHTML = 'h';
+  }	
+  else
+      document.getElementById("failMessage").innerHTML="There's no "+frm.guessChar.value;
+  }
+</Script>
+
+
+<Form>
+<P>Guess: <INPUT TYPE="TEXT" NAME="guessChar"><BR><BR>
+<INPUT TYPE="Button" Value="Submit" onClick="showAndClearField(this.form)">
+</P>
+</Form>
+
+<span id="char1" >_</span>
+<span id="char2" >_</span>
+<span id="char3" >_</span>
+<span id="char4" >_</span>
+<span id="char5" >_</span>
+<span id="char6" >_</span>
+
+<p id="failMessage"></p>
+</div>
