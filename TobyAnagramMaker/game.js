@@ -5,7 +5,7 @@ function change()
     document.getElementById('output34').innerHTML = theInput;
     var anagramcount = theInput.length + 33;
 
-    for (var i = 34; i < anagramcount; i++)
+    for (var i = 34; i <= anagramcount; i++)
     {
         var j = i + 1;
         var mydiv = document.getElementById('output' + i);
