@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Anagram Maker</title>
+    <link rel="stylesheet" type="text/css" href="stylesheet.css"/>
+    <script type="text/javascript" src="game.js"></script>
+  </head>
+
+  <body>
+    <h1>Welcome to the Anagram Maker!</h1>
+    <h3>Please enter a word or phrase below (you have 25 characters). You can then use this game to see if you
+      can find any anagrams of your input! </h3>  
+
+    <div id="prompt">
+      Type your input below: </div>
+<br>
+    <input id="word" type="text"> 
+    <input type ="button" value="Submit Text" id="submit"
+           onClick="change()">
+    <br>
+    <div2 id="output34"></div2>
+    <div2 id="output35"></div2>
+    <div2 id="output36"></div2>
+    <div2 id="output37"></div2>
+    <div2 id="output38"></div2>
+    <div2 id="output39"></div2>
+    <div2 id="output40"></div2>
+    <div2 id="output41"></div2>
+    <div2 id="output42"></div2>
+    <div2 id="output43"></div2>
+    <div2 id="output44"></div2>
+    <div2 id="output45"></div2>
+    <div2 id="output46"></div2>
+    <div2 id="output47"></div2>
+    <div2 id="output48"></div2>
+    <div2 id="output49"></div2>
+    <div2 id="output50"></div2>
+    <div2 id="output51"></div2>
+    <div2 id="output52"></div2>
+    <div2 id="output53"></div2>
+    <div2 id="output54"></div2>
+    <div2 id="output55"></div2>
+    <div2 id="output56"></div2>
+    <div2 id="output57"></div2>
+    <anagram id="58">&nbsp;</anagram>
+
+
+    <br>
+    <div>Here are some examples to play around with below. If you click on
+    a letter, it will swap it with the character to the right of it. If
+    you need a space, extras are found if needed at the end of the letters. </div>
+
+    <br>
+    <anagram id="1" onClick="swapletters(1,2)">t</anagram>
+    <anagram id="2" onClick="swapletters(2,3)">o</anagram>
+    <anagram id="3" onClick="swapletters(3,4)">m</anagram>
+    <anagram id="4" onClick="swapletters(4,5)">&nbsp;</anagram>
+    <anagram id="5" onClick="swapletters(5,6)">m</anagram>
+    <anagram id="6" onClick="swapletters(6,7)">a</anagram>
+    <anagram id="7" onClick="swapletters(7,8)">r</anagram>
+    <anagram id="8" onClick="swapletters(8,9)">v</anagram>
+    <anagram id="9" onClick="swapletters(9,10)">o</anagram>
+    <anagram id="10" onClick="swapletters(10,11)">l</anagram>
+    <anagram id="11" onClick="swapletters(11,12)">o</anagram>
+    <anagram id="12" onClick="swapletters(12,13)">&nbsp;</anagram>
+    <anagram id="13" onClick="swapletters(13,14)">r</anagram>
+    <anagram id="14" onClick="swapletters(14,15)">i</anagram>
+    <anagram id="15" onClick="swapletters(15,16)">d</anagram>
+    <anagram id="16" onClick="swapletters(16,17)">d</anagram>
+    <anagram id="17" onClick="swapletters(17,18)">l</anagram>
+    <anagram id="18" onClick="swapletters(18,19)">e</anagram>
+    <anagram id="19" onClick="swapletters(19,20)">&nbsp;</anagram>
+    <anagram id="20">&nbsp;</anagram>
+
+    <br>
+
+    <anagram id="21" onClick="swapletters(21,22)">h</anagram>
+    <anagram id="22" onClick="swapletters(22,23)">e</anagram>
+    <anagram id="23" onClick="swapletters(23,24)">&nbsp;</anagram>
+    <anagram id="24" onClick="swapletters(24,25)">b</anagram>
+    <anagram id="25" onClick="swapletters(25,26)">u</anagram>
+    <anagram id="26" onClick="swapletters(26,27)">g</anagram>
+    <anagram id="27" onClick="swapletters(27,28)">s</anagram>
+    <anagram id="28" onClick="swapletters(28,29)">&nbsp;</anagram>
+    <anagram id="29" onClick="swapletters(29,30)">g</anagram>
+    <anagram id="30" onClick="swapletters(30,31)">o</anagram>
+    <anagram id="31" onClick="swapletters(31,32)">r</anagram>
+    <anagram id="32" onClick="swapletters(32,33)">e</anagram>
+    <anagram id="33">&nbsp;</anagram>
+
+    <br>
+
+    <anagram id="59" onClick="swapletters(59,60)">t</anagram>
+    <anagram id="60" onClick="swapletters(60,61)">h</anagram>
+    <anagram id="61" onClick="swapletters(61,62)">e</anagram>
+    <anagram id="62" onClick="swapletters(62,63)">&nbsp;</anagram>
+    <anagram id="63" onClick="swapletters(63,64)">e</anagram>
+    <anagram id="64" onClick="swapletters(64,65)">y</anagram>
+    <anagram id="65" onClick="swapletters(65,66)">e</anagram>
+    <anagram id="66" onClick="swapletters(66,67)">s</anagram>
+    <anagram id="67">&nbsp; </anagram>
+
+    <br>
+
+    <anagram id="68" onClick="swapletters(68,69)">a</anagram>
+    <anagram id="69" onClick="swapletters(69,70)">s</anagram>
+    <anagram id="70" onClick="swapletters(70,71)">t</anagram>
+    <anagram id="71" onClick="swapletters(71,72)">r</anagram>
+    <anagram id="72" onClick="swapletters(72,73)">o</anagram>
+    <anagram id="73" onClick="swapletters(73,74)">n</anagram>
+    <anagram id="74" onClick="swapletters(74,75)">o</anagram>
+    <anagram id="75" onClick="swapletters(75,76)">m</anagram>
+    <anagram id="76" onClick="swapletters(76,77)">e</anagram>
+    <anagram id="77" onClick="swapletters(77,78)">r</anagram>
+    <anagram id="78">&nbsp;</anagram>
+
+    <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+
+    <hr>
+    <small><center>
+        <a href="resume.html">Resume</a> |
+        <a href="http://www.grinnellplans.com/read.php?searchname=barattat17">
+          [plans]</a> |
+        <a href="https://www.facebook.com/creationofwords"> facebook </a> |
+        <a href="https://github.com/Tales-of-T"> GitHub</a> |
+        <a href="mailto:barattat17@grinnell.edu">Email Me</a> <br>
+       <b><a href="index.html">Front Door</a></b>
+  </body>
+</html>
