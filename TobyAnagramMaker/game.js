@@ -5,17 +5,21 @@ function change()
     document.getElementById('output34').innerHTML = theInput;
     var anagramcount = theInput.length + 33;
 
-    for (var i = 34; i <= anagramcount; i++)
+    for (var i = 34; i <= anagramcount + 1; i++)
     {
         var j = i + 1;
         var mydiv = document.getElementById('output' + i);
-        if (theInput.charAt(i-34) == ' ')
-            mydiv.innerHTML = '<anagram id="' + i +
-            '" onClick="swapletters(' + i + ',' + j + 
-            ')">&nbsp;</anagram>';
-        else mydiv.innerHTML = '<anagram id="' + i + 
-            '" onClick="swapletters(' + i  + ',' + j + 
-            ')">' + theInput.charAt(i-34) + '</anagram>';
+        if (i != anagramcount + 1)
+        {
+            if (theInput.charAt(i-34) == ' ')
+                mydiv.innerHTML = '<anagram id="' + i +
+                '" onClick="swapletters(' + i + ',' + j + 
+                ')">&nbsp;</anagram>';
+            else mydiv.innerHTML = '<anagram id="' + i + 
+                '" onClick="swapletters(' + i  + ',' + j + 
+                ')">' + theInput.charAt(i-34) + '</anagram>';
+        }
+        else mydiv.innerHTML = '<anagram id="' + i + '"></anagram>';
     }
 }
 
