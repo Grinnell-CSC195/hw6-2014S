@@ -1,0 +1,97 @@
+<html>
+<head>
+<title>Story</title>
+<link rel="evegamestylesheet" type="text/css" href="evegamestylesheet.css"/>
+<script type="text/javascript" src="evegame.js"></script>
+</head>
+<body>
+
+<h1>Save the prince!</h1>
+<p>Greetings, adventurer. You have just been hired by the queen of this 
+kingdom to rescue her son from a terrible monster. Right now, you are 
+standing in your room at the inn. What would you like to do?</p>
+
+<button onclick="story(1)">Go back to sleep.</button>
+<button onclick="story(2)">Go to the inn's common room and ask about the monster.</button>
+<button onclick="story(3)">Go ask the queen for more information about her son.</button>
+
+<p id="demo1"></p>
+
+<div id="here">
+</div>
+<div id="there">
+</div>
+<div id="anywhere">
+</div>
+
+<p id = "demo2"></p>
+
+<div id="morallyGood">
+</div>
+<div id="morallyBad">
+</div>
+
+<p id = "demo3"></p>
+
+<Script>
+function newChoice1()
+{
+	var here = document.getElementById("here");
+	var there = document.getElementById("there");
+	var anywhere = document.getElementById("anywhere");
+	here.innerHTML = "<button onclick=\"story(4)\"> Give the man a gold piece.</button>";
+	there.innerHTML = "<button onclick=\"story(5)\"> Give the man a silver piece.</button>";
+	anywhere.innerHTML = "<button onclick=\"story(6)\"> Give the man a menacing look and place your hand on your sword hilt.</button>";
+}
+
+
+function newChoice2()
+{
+	var morallyGood = document.getElementById("morallyGood");
+	var morallyBad = document.getElementById("morallyBad");
+	morallyGood.innerHTML = "<button onclick=\"story(7)\"> Go tell the queen that you were unable to find the monster.</button>";
+	morallyBad.innerHTML = "<button onclick=\"story(8)\">Get the names of as many conspirators as you can to the queen.</button>";
+}
+function story(choice)
+{
+	var x="";
+	var y="";
+	var z="";
+	switch (choice)
+{
+	case 1:
+	x="...Our adventurer is severely sleep deprived due to the midterm they just took in swordfighting, and needs their sleep for tomorrow's 8 minute presentation on the code of chivalry. Sleep well, adventurer.";
+	break;
+	case 2:
+	x="You head down into the crowded inn and seat yourself at the bar. The bartender looks you over and lets out a loud snort. \"You'll be here for the monster, I reckon.\" When you nod, he pulls out a glass and starts polishing it. \"I suppose I could tell you where it is, but it'll cost you.\" How will you respond?";
+	newChoice1();
+	break;
+	case 3:
+	x="The queen seems a bit annoyed that you haven't set off yet, but when you tell her you want to learn more about her son she relents. She tells you that he is a wonderful child who spends hours every day working on his lessons. \"He could become the greatest scholar in all the land,\" she mused, \"if he weren't always getting kidnapped!\" Apparantly, the prince is kidnapped once every few weeks, and although he is generally returned in one piece, she has yet to catch the person doing it. Now that you know this, what is your next course of action?";
+	break;
+	case 4:
+	y="The man takes your gold quickly enough, but in spite of badgering him for an hour afterwards he doesn't give you any worthwhile information. The night is young, and you decide to go try some other inns. A couple of blocks away, you are turning a corner when you are hit over the head, and everything goes dark. You wake up in an alleyway, robbed blind. They even took your sword, a priceless family heirloom! You go to the queen for justice, but she decides that a knight who can be caught off their guard won't be of any use to her, so she retracts her offer to pay you for her son's return. Downtrodden, you return to your home town, already anxious about what you're going to tell the village elders. \n BAD END";
+	break;
+	case 5:
+	y="The man snatches the silver piece out of your hand and returns to polishing his mug. \"Well, you seem like a decent enough sort, so I'll tell you what we all know: there's sure as hell no monster.\" \"Unless you count the queen!\" a voice pipes up from the corner of the bar, and several patrons nod in agreement. The bartender continues, \"She keeps that poor boy locked up in the castle studying things he'll never have to know, but she never gives him the chance to practice ruling.\" The bartender looks around at the other patrons, then back at you. \"A few of us decided it was too much, so one night we helped him sneak out and left a note saying he'd been kidnapped. We've been doing it every few weeks for a while now, giving him a ride over to the neighboring kingdom so he can see what real ruling looks like.\" You feel like this makes sense, but you also wouldn't mind getting that cash reward the queen promised you. What will you do?";
+	newChoice2();
+	break;
+	case 6:
+	y="You feel a tap on your shoulder. Standing behind you is the largest man you have ever seen, holding a mace and smiling menacingly. You open your mouth to say something, and the next thing you know you're on the ground and missing several teeth. You are kicked out of the inn, and word travels fast that you are a false knight who doesn't follow the code of chivalry, can't hold his own against a bouncer, and probably cheated on your significant other. You are so ashamed that you decide to skip town before things get any worse. \n BAD END";
+	break;
+	case 7:
+	z="You report to the queen, and tell her that you were unable to find any sign of the monster. The queen seems disappointed, but says that she is glad that somebody tried. \"In truth,\" she sighs, \"my kingdom is small, and I have been unable to find anyone able to help me. I do appreciate your attempt, although it was fruitless in the end.\" You part ways on good terms, and although you recieve no reward you stop by the inn again before you leave and recieve free drinks from several patrons.";
+	break;
+	case 8:
+	z="You sympathize with the bartender's story, and he and several other patrons introduce themselves to you. They spend half the night bragging about how hard it was to sneak the prince out of the palace, and then one by one they either pass out or go home. When most of them are gone, you creep out of the inn and rush to the queen's palace. She meets you there, and you tell her the whole story, along with the names of the conspirators. You expected her to be furious, but to your surprise she starts laughing. \"They think I didn't know? That is hilarious! Admittedly, I thought he was getting out on his own, but honestly! I'm on good terms with the queen of our neighboring kingdom, of course she tells me when my son suddenly shows up on her doorstep.\" You blink in surprise, and then flush in embarassment as she continues, \"I thought knights were supposed to side with the weak against the mighty? And fight for things other than material wealth?\" The queen orders you to stay put, and summons the conspirators to the castle. Whey they see you and realize what you did, they are furious. The queen suggests that you leave her kingdom, and you are more than happy to oblige. \n BAD END.";
+	break;
+}
+
+document.getElementById("demo1").innerHTML=x;
+document.getElementById("demo2").innerHTML=y;
+document.getElementById("demo3").innerHTML=z;
+}
+</Script>
+
+
+</form>
