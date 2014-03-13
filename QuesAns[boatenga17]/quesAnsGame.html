@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="stylesheet" type="text/css" href="stylesheetLarry.css"/>
+</head>
+<table  align = "center" border="0" cellspacing="0" cellpadding="350">
+  <tr>
+    <td width="100%">
+<h1>SillyQuesAns</h1>
+<h4>Inspired by : Crystal Ball Script - By Michael McDermott</h4>
+</p>
+
+
+<p style="color : white" font-size:"24px">Bored? Please enter a <strong>yes/no</strong> question and it will respond</p>
+
+<table width="40%" border="0">
+<tr>
+<td>
+<form name="input1">
+<input name="textfield" size=63>
+</form>
+</td>
+</tr>
+</table>
+<table width="8%" border="0">
+<tr>
+<td>
+<form>
+<input type="button" name="button1" value="Click here to Ask Me!"
+onClick="fetchAnswers()">
+</form>
+</td>
+</tr>
+</table>
+
+<script language="JavaScript">
+
+/* Inspired by : Crystal Ball Script - By Michael McDermott */
+
+
+function fetchAnswers() {
+
+time = new Date()
+randominteger = time.getSeconds()
+
+if (document.input1.textfield.value == "") { 
+alert("Oh come on!,Please ask me a question!")
+return
+}
+
+if (randominteger <= 3) answer="This life is the struggle, don't even bother"
+if ((randominteger >= 4) && (randominteger <= 6)) answer ="Oh yes! You'd be great, trust me, it could get worse"
+if ((randominteger >= 7) && (randominteger <= 9)) answer ="Oh come on! No way!"
+if ((randominteger >= 10) && (randominteger <= 12)) answer ="I don't know what to tell you and that makes me really sad"
+if ((randominteger >= 13) && (randominteger <= 15)) answer ="Why are you asking a computer for answers? Do you really believe the answers?"
+if ((randominteger >= 16) && (randominteger <= 18)) answer ="Honey, this sounds like a personal problem!"
+if ((randominteger >= 19) && (randominteger <= 21)) answer ="I don't mind your sharing your life with me"
+if ((randominteger >= 22) && (randominteger <= 24)) answer ="Ask me again, I am restless and overworked."
+if ((randominteger >= 25) && (randominteger <= 27)) answer ="Yhup! It's just as it should be"
+if ((randominteger >= 28) && (randominteger <= 30)) answer ="As the sun is hot, your answer is YES."
+if ((randominteger >= 31) && (randominteger <= 33)) answer ="Did you get drunk last weekend?Well, there's your answer."
+if ((randominteger >= 34) && (randominteger <= 36)) answer ="Forget about it, please"
+if ((randominteger >= 37) && (randominteger <= 39)) answer ="Yeah, it could happen. 80% chance."
+if ((randominteger >= 40) && (randominteger <= 42)) answer ="Lord! Please no!"
+if ((randominteger >= 43) && (randominteger <= 45)) answer ="If you really think so, then it shall be."
+if ((randominteger >= 46) && (randominteger <= 48)) answer ="Looks like your destiny!"
+if ((randominteger >= 49) && SillyQuesAns(randominteger <= 51)) answer ="Bye Bye to that dream, dear friend."
+if ((randominteger >= 52) && (randominteger <= 54)) answer ="If you own a pet, yes. Otherwise, no."
+if ((randominteger >= 55) && (randominteger <= 57)) answer ="I dide thinking of an answer!"
+if ((randominteger >= 58) && (randominteger <= 60)) answer ="I'm laughing hard, very hard. You'd better ask again."
+
+var newWindow = window.open("","Results","width=300,height=300")
+newWindow.document.write("<html><body bgcolor='#000000' text='#FFFFCC' link='#00FFFF' alink='#000066' vlink='#6666FF'>")
+newWindow.document.write("<P align='center'>Your Question:</P><P></P>")
+newWindow.document.write("<P align='center'>" + document.input1.textfield.value + "</P>")
+newWindow.document.write("<P></P><P></P><P></P><P align='center'>And that is what I came up with:</P><P></P>")
+newWindow.document.write("")
+newWindow.document.write("<P align='center'>" + answer + "</P>")
+newWindow.document.write("<P></P><P></P><P align='center'><A HREF='javascript:window.close()'>Close Me</A></P>")
+}
+
+</script>
+
+</td>
+  </tr>
+</table>

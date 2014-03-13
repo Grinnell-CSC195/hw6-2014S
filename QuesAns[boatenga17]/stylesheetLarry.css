@@ -1,0 +1,41 @@
+
+body 
+{
+background-image:url("https://scontent-b.xx.fbcdn.net/hphotos-ash3/t1/1503939_10201648923198913_1432254104_n.jpg");
+background-size: cover;
+background-repeat:no-repeat;
+}
+
+.facebookIcon
+{
+postion: bottom;
+text-align: center;
+padding-top: 20px;
+opacity: 0.7;
+}
+
+.facebookIcon:hover{
+opacity: 1;
+} 
+.googleIcon{
+postion: bottom;
+text-align: center;
+padding-top: 20px;
+opacity: 0.8;
+
+}
+.googleIcon:hover{
+opacity: 1;
+} 
+
+
+.BLURtxt {
+color: #3c3c3c;
+text-shadow: 0 0 0 rgba(0,0,0,0.5), 0 0 0 rgba(0,0,0,0.5), 0 0 0 rgba(0,0,0,0.5), 0 0 0 rgba(0,0,0,0.5), 0 -1px 5px rgba(255,255,255,0.5);
+-webkit-transition: all 0.8s;
+}
+.BLURtxt:hover {
+color: transparent;
+text-shadow: -9px 0 5px rgba(0,0,0,0.3), 9px 0 5px rgba(0,0,0,0.3), -21px 0 5px rgba(0,0,0,0.1), 21px 0 5px rgba(0,0,0,0.1), 0 0 0 rgba(0,0,0,0.1);
+}
+
