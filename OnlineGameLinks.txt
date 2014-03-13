@@ -4,3 +4,4 @@ Tiles (Alex Mitchell) : http://www.cs.grinnell.edu/~mitchell17/tiles/
 drWo blaeScrm (Zoe Wolter) : http://www.cs.grinnell.edu/~wolterzo/drWo-blaeScmr.html
 Unwrap Burgers (Abby Stevens): http://www.cs.grinnell.edu/~stevensa1/fungi.html
 Tic-Tac-Toe (Samee Zahid): http://www.cs.grinnell.edu/~zahidmuh17/mode.html
+Rock-Paper-Scissors(Alex Greenberg): http://www.cs.grinnell.edu/~greenber/rock.html
