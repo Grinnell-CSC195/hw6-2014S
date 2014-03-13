@@ -5,3 +5,4 @@ drWo blaeScrm (Zoe Wolter) : http://www.cs.grinnell.edu/~wolterzo/drWo-blaeScmr.
 Unwrap Burgers (Abby Stevens): http://www.cs.grinnell.edu/~stevensa1/fungi.html
 Tic-Tac-Toe (Samee Zahid): http://www.cs.grinnell.edu/~zahidmuh17/mode.html
 Rock-Paper-Scissors(Alex Greenberg): http://www.cs.grinnell.edu/~greenber/rock.html
+Choose your own adventure(Eve Lyons-Berg): http://www.cs.grinnell.edu/~lyonsber17/evegame.html
