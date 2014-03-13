@@ -9,3 +9,4 @@ Choose your own adventure(Eve Lyons-Berg): http://www.cs.grinnell.edu/~lyonsber1
 What's That Number (Ajuna Kyaruzi) : http://www.cs.grinnell.edu/~kyaruzia17/Random.html
 Musical Jam (W. Blake Creasey) : http://www.cs.grinnell.edu/~creaseyw/example.html#
 QuesAns (Boateng Asante, Larry) : http://www.cs.grinnell.edu/~boatenga17/quesAnsGame.html
+Cootie Catcher (Mira Hall) : http://www.cs.grinnell.edu/~hallmira/Game.html
