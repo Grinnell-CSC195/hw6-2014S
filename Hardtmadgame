@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h1>This is a game</h1>
+
+<button type="button" onclick="myFunction()">Try it</button>
+
+alert("Let's play Is It Prime?")
+
+var x = prompt("Enter a positive integer, and I'll tell you if it's prime")
+
+if (x == 0 || x == 1)
+{
+ alert ("Stop being annoying")
+}
+
+if(x == 3)
+{
+  alert ("It's prime")
+}
+
+var y = ((x * x) - 1) % 24
+
+if(y == 0)
+{
+ alert ("It's prime")
+}
+
+else
+{
+ alert ("It's not prime")
+}
+
+alert ("That was a lot of fun.")
+
+</body>
+</html> 
+
+​
